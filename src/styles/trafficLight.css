@@ -1,0 +1,81 @@
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+  }
+  
+  .red.on {
+    background-color: red;
+    opacity: 1;
+  }
+  
+  .yellow.on {
+    background-color: yellow;
+    opacity: 1;
+  }
+  
+  .green.on {
+    background-color: green;
+    opacity: 1;
+  }
+  
+  .pedestrian-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .light-timer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .timer-box {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  /* src/styles/trafficLight.css */
+.pedestrian-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .pedestrian-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
